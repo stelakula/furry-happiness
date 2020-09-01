@@ -15,18 +15,18 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 <body>
-<form action="http://shwethatela-wsm.internal.salesforce.com:6109/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"shwe_desktop_captcha","fallback":"true","orgId":"00Dxx0000006Hdr","ts":""}'>
-<input type=hidden name="orgid" value="00Dxx0000006Hdr">
-<input type=hidden name="retURL" value="http://ndtv.com">
+<input type=hidden name='captcha_settings' value='{"keyname":"gso_captcha","fallback":"true","orgId":"00DB00000000N6U","ts":""}'>
+<input type=hidden name="orgid" value="00DB00000000N6U">
+<input type=hidden name="retURL" value="http://www.google.com">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
 <!--  these lines if you wish to test in debug mode.                          -->
 <!--  <input type="hidden" name="debug" value=1>                              -->
 <!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="shwetha.telakula@salesforce.com">                                -->
+<!--  value="matt.buland@salesforce.com">                                     -->
 <!--  ----------------------------------------------------------------------  -->
 
 <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
@@ -39,7 +39,9 @@
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<div class="g-recaptcha" data-sitekey="6LcbNsQZAAAAAO5nK1UHJgfWPx-8buEry5wm9bC4"></div><br>
+<input type="hidden"  id="external" name="external" value="1" /><br>
+
+<div class="g-recaptcha" data-sitekey="6LdTcMYZAAAAANLNB64_MsWsvQS47z5lqFw9nfDZ"></div><br>
 <input type="submit" name="submit">
 
 </form>
