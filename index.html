@@ -5,6 +5,7 @@
 <!--  ----------------------------------------------------------------------  -->
 <html>
 <head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
@@ -14,12 +15,11 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 <body>
+<form action="https://webto.stmfb.stm.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<form action="http://shwethatela-wsm.internal.salesforce.com:6109/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-
-<input type=hidden name='captcha_settings' value='{"keyname":"wsm_patch","fallback":"true","orgId":"00Dxx0000006Gcx","ts":""}'>
-<input type=hidden name="orgid" value="00Dxx0000006Gcx">
-<input type=hidden name="retURL" value="http://ndtv.com">
+<input type=hidden name='captcha_settings' value='{"keyname":"na44stmfa","fallback":"true","orgId":"00DRM000000Fh5c","ts":""}'>
+<input type=hidden name="orgid" value="00DRM000000Fh5c">
+<input type=hidden name="retURL" value="http://www.google.com">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -39,7 +39,7 @@
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<div class="g-recaptcha" data-sitekey="6Le9-MYZAAAAAIwF894dVyCdXsFFGXJf-xKg7M3G"></div><br>
+<div class="g-recaptcha" data-sitekey="6LfR_84ZAAAAANBe7kelZJLJLN_NKl8NU0-ZbhLc"></div><br>
 <input type="submit" name="submit">
 
 </form>
