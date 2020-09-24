@@ -10,16 +10,15 @@
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
 </script>
-</head>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 <body>
 <form action="https://login.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"na44stmfa","fallback":"true","orgId":"00DRM000000Fh5c","ts":""}'>
-<input type=hidden name="orgid" value="00DRM000000Fh5c">
-<input type=hidden name="retURL" value="http://ndtv.com">
+<input type=hidden name='captcha_settings' value='{"keyname":"na45stmfb","fallback":"true","orgId":"00DRM0000005yi9","ts":""}'>
+<input type=hidden name="orgid" value="00DRM0000005yi9">
+<input type=hidden name="retURL" value="http://www.google.com">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -39,10 +38,11 @@
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<div class="g-recaptcha" data-sitekey="6LfR_84ZAAAAANBe7kelZJLJLN_NKl8NU0-ZbhLc"></div><br>
+<div class="g-recaptcha" data-sitekey="6Ldc_84ZAAAAAJLmlR9lKkNYxvAbxAxy4fNFRyoW"></div><br>
 <input type="submit" name="submit">
 
 </form>
+
 
 
 </body>
