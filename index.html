@@ -5,14 +5,15 @@
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
 </script>
+
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 <body>
-<form action="http://stelakula-ltm.internal.salesforce.com:6109/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<form action="https://webto.test1.pc-rnd.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"main_laptop","fallback":"true","orgId":"00Dxx0000006GcR","ts":""}'>
-<input type=hidden name="orgid" value="00Dxx0000006GcR">
+<input type=hidden name='captcha_settings' value='{"keyname":"core4ora6","fallback":"true","orgId":"00DAB0000005MJl","ts":""}'>
+<input type=hidden name="orgid" value="00DAB0000005MJl">
 <input type=hidden name="retURL" value="http://www.google.com">
 
 <!--  ----------------------------------------------------------------------  -->
@@ -20,7 +21,7 @@
 <!--  these lines if you wish to test in debug mode.                          -->
 <!--  <input type="hidden" name="debug" value=1>                              -->
 <!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="shwetha.telakula@salesforce.com">                                -->
+<!--  value="sbalagopalan@salesforce.com">                                    -->
 <!--  ----------------------------------------------------------------------  -->
 
 <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
@@ -33,7 +34,7 @@
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<div class="g-recaptcha" data-sitekey="6Lcf6NAZAAAAAIgV9jI75Mw5rntM7iVG_g7oUi_q"></div><br>
+<div class="g-recaptcha" data-sitekey="6Lc7DtQZAAAAAH5SKkw4xzkf90z5EI7-PeGafWLz"></div><br>
 <input type="submit" name="submit">
 
 </form>
